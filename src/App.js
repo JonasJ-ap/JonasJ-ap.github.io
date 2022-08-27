@@ -71,7 +71,7 @@ const Home = React.forwardRef((props, ref) => {
 });
 
 const App = () => {
-  const titleRef = React.useRef();
+  const titleRef = React.useRef({ offsetTop: 100 });
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
